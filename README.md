@@ -26,3 +26,5 @@ gecco爬虫和spring结合使用
 	//单个爬虫每次抓取完一个请求后的间隔时间
 	.interval(2000)
 	.run();
+##DEMO
+参考源代码中测试用例src/test

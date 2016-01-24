@@ -2,7 +2,6 @@ package com.geccocrawler.gecco.spring;
 
 import java.io.IOException;
 
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.geccocrawler.gecco.GeccoEngine;
