@@ -118,7 +118,6 @@ public class MyGithub implements HtmlBean {
 		GeccoEngine.create()
 		.pipelineFactory(springPipelineFactory)
 		.classpath("com.geccocrawler.gecco.spring")
-		.userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36")
 		.start("https://github.com/xtuhcy/gecco")
 		.interval(3000)
 		.run();
