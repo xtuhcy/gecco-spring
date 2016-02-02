@@ -5,7 +5,7 @@ gecco爬虫和spring结合使用
 	<dependency>
 	    <groupId>com.geccocrawler</groupId>
 	    <artifactId>gecco-spring</artifactId>
-	    <version>1.0.3</version>
+	    <version>1.0.4</version>
 	</dependency>
 
 ##QuickStart
