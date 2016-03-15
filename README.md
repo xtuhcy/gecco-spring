@@ -5,11 +5,13 @@ gecco爬虫和spring结合使用
 	<dependency>
 	    <groupId>com.geccocrawler</groupId>
 	    <artifactId>gecco-spring</artifactId>
-	    <version>1.0.4</version>
+	    <version>1.0.5</version>
 	</dependency>
 
 ##QuickStart
-
+	//配置springPipelineFactory
+	<bean id="springPipelineFactory" class="com.geccocrawler.gecco.spring.SpringPipelineFactory"/>
+	
 	//引入SpringPipelineFactory
 	@Resource(name="springPipelineFactory")
 	private PipelineFactory springPipelineFactory;
