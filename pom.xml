@@ -9,7 +9,7 @@
 		<dependency>
 			<groupId>com.geccocrawler</groupId>
 			<artifactId>gecco</artifactId>
-			<version>1.0.5</version>
+			<version>1.0.6</version>
 		</dependency>
 		<dependency>
 			<artifactId>spring-beans</artifactId>
@@ -34,8 +34,8 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
 					<configuration>
-						<source>1.6</source>
-						<target>1.6</target>
+						<source>1.7</source>
+						<target>1.7</target>
 						<encoding>UTF-8</encoding>
 					</configuration>
 				</plugin>
@@ -43,8 +43,8 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
 					<configuration>
-						<source>1.6</source>
-						<target>1.6</target>
+						<source>1.7</source>
+						<target>1.7</target>
 						<encoding>UTF-8</encoding>
 						<skip>true</skip>
 					</configuration>
@@ -75,7 +75,7 @@
 		<connection>scm:git:https://github.com/xtuhcy/gecco-spring.git</connection>
 		<developerConnection>scm:git:https://github.com/xtuhcy/gecco-spring.git</developerConnection>
 		<url>https://github.com/xtuhcy/gecco-spring</url>
-		<tag>v1.0.0</tag>
+		<tag>v1.0.6</tag>
 	</scm>
 	<developers>
 		<developer>
@@ -135,8 +135,8 @@
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-compiler-plugin</artifactId>
 						<configuration>
-							<source>1.6</source>
-							<target>1.6</target>
+							<source>1.7</source>
+							<target>1.7</target>
 							<encoding>UTF-8</encoding>
 						</configuration>
 					</plugin>
