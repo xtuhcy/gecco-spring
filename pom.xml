@@ -3,23 +3,23 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.geccocrawler</groupId>
 	<artifactId>gecco-spring</artifactId>
-	<version>1.0.7</version>
+	<version>1.0.8</version>
 
 	<dependencies>
 		<dependency>
 			<groupId>com.geccocrawler</groupId>
 			<artifactId>gecco</artifactId>
-			<version>1.0.7</version>
+			<version>1.0.8</version>
 		</dependency>
 		<dependency>
 			<artifactId>spring-beans</artifactId>
 			<groupId>org.springframework</groupId>
-			<version>3.2.8.RELEASE</version>
+			<version>3.2.14.RELEASE</version>
 		</dependency>
 		<dependency>
 			<artifactId>spring-context</artifactId>
 			<groupId>org.springframework</groupId>
-			<version>3.2.8.RELEASE</version>
+			<version>3.2.14.RELEASE</version>
 		</dependency>
 	</dependencies>
 	
