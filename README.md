@@ -39,6 +39,15 @@ gecco爬虫和spring结合使用
 		}
 	
 	}
+##开发Pipeline
+pipeline的开发和之前一样，唯一不同的是不需要@PipelineName("consolePipeline")定义pipeline的名称，而是使用spring的@Service定义，spring的bean名称即为pipeline的名称。可以参考：
 
+	@Service("consolePipeline")
+	public class ConsolePipeline implements Pipeline<SpiderBean> {
+		@Override
+		public void process(SpiderBean bean) {
+			System.out.println(JSON.toJSONString(bean));
+		}
+	}
 ##DEMO
 参考源代码中测试用例src/test，有详细的例子
