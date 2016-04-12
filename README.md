@@ -5,28 +5,40 @@ gecco爬虫和spring结合使用
 	<dependency>
 	    <groupId>com.geccocrawler</groupId>
 	    <artifactId>gecco-spring</artifactId>
-	    <version>1.0.7</version>
+	    <version>x.x.x</version>
 	</dependency>
+![maven](https://img.shields.io/maven-central/v/com.geccocrawler/gecco-spring.svg?style=flat-square)
+##使用注解方式配置Spring
 
-##QuickStart
-	//配置springPipelineFactory
+扫描com.geccocrawler.gecco.spring，自动注入springPipelineFactory和consolePipeline
+
+	<context:component-scan base-package="com.geccocrawler.gecco.spring" />
+
+##使用非注解方式配置Spring
+
+手动增加bean：springPipelineFactory和consolePipeline
+
 	<bean id="springPipelineFactory" class="com.geccocrawler.gecco.spring.SpringPipelineFactory"/>
 	
-	//引入SpringPipelineFactory
-	@Resource(name="springPipelineFactory")
-	private PipelineFactory springPipelineFactory;
+	<bean id="consolePipeline" class="com.geccocrawler.gecco.spring.ConsolePipeline"/>
 
-	//启动GeccoEngine时，设置springPipeLineFactory
-	GeccoEngine.create()
-	.pipelineFactory(springPipelineFactory)
-	.classpath("com.geccocrawler.gecco.demo")
-	//开始抓取的页面地址
-	.start("https://github.com/xtuhcy/gecco")
-	//开启几个爬虫线程
-	.thread(1)
-	//单个爬虫每次抓取完一个请求后的间隔时间
-	.interval(2000)
-	.run();
+##初始化Gecco
+加载完成bean后启动Gecco，可以通过继承SpringGeccoEngine类，初始化你的GeccoEngine，需要特别注意的是GeccoEngine需要用非阻塞模式***start()***运行:
+
+	@Service
+	public class InitGecco extends SpringGeccoEngine {
+	
+		@Override
+		public void init() {
+			GeccoEngine.create()
+			.pipelineFactory(springPipelineFactory)
+			.classpath("com.geccocrawler.gecco.spring")
+			.start("https://github.com/xtuhcy/gecco")
+			.interval(3000)
+			.start();
+		}
+	
+	}
 
 ##DEMO
-参考源代码中测试用例src/test
+参考源代码中测试用例src/test，有详细的例子
