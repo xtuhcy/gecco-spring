@@ -4,13 +4,11 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
-import org.springframework.stereotype.Service;
 
 import com.geccocrawler.gecco.pipeline.Pipeline;
 import com.geccocrawler.gecco.pipeline.PipelineFactory;
 import com.geccocrawler.gecco.spider.SpiderBean;
 
-@Service
 public class SpringPipelineFactory implements PipelineFactory, ApplicationContextAware {
 
 	private ApplicationContext applicationContext;

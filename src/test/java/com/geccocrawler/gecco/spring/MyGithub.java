@@ -1,17 +1,11 @@
 package com.geccocrawler.gecco.spring;
 
-import java.io.IOException;
-
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import com.geccocrawler.gecco.GeccoEngine;
 import com.geccocrawler.gecco.annotation.Gecco;
 import com.geccocrawler.gecco.annotation.Href;
 import com.geccocrawler.gecco.annotation.HtmlField;
 import com.geccocrawler.gecco.annotation.Request;
 import com.geccocrawler.gecco.annotation.RequestParameter;
 import com.geccocrawler.gecco.annotation.Text;
-import com.geccocrawler.gecco.pipeline.PipelineFactory;
 import com.geccocrawler.gecco.request.HttpRequest;
 import com.geccocrawler.gecco.spider.HtmlBean;
 
@@ -110,16 +104,6 @@ public class MyGithub implements HtmlBean {
 
 	public void setContributors(String contributors) {
 		this.contributors = contributors;
-	}
-
-	public static void main(String[] args) {
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
-		try {
-			System.in.read();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		context.close();
 	}
 
 }

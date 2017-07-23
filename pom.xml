@@ -3,7 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.geccocrawler</groupId>
 	<artifactId>gecco-spring</artifactId>
-	<version>1.2.8</version>
+	<version>1.2.9-SNAPSHOT</version>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.3.RELEASE</version>
+	</parent>
 
 	<dependencies>
 		<dependency>
@@ -12,21 +18,15 @@
 			<version>1.2.8</version>
 		</dependency>
 		<dependency>
-			<artifactId>spring-beans</artifactId>
-			<groupId>org.springframework</groupId>
-			<version>3.2.14.RELEASE</version>
-		</dependency>
-		<dependency>
-			<artifactId>spring-context</artifactId>
-			<groupId>org.springframework</groupId>
-			<version>3.2.14.RELEASE</version>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
-	
+
 	<name>Gecco-Spring</name>
 	<description>Gecco Crawler With Spring</description>
 	<url>https://github.com/xtuhcy/gecco-spring</url>
-	
+
 	<build>
 		<pluginManagement>
 			<plugins>

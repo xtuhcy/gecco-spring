@@ -14,6 +14,7 @@ public class InitGecco extends SpringGeccoEngine {
 		.classpath("com.geccocrawler.gecco.spring")
 		.start("https://github.com/xtuhcy/gecco")
 		.interval(3000)
+		.loop(true)
 		.start();
 	}
 
