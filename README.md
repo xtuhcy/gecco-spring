@@ -9,7 +9,7 @@ gecco爬虫和spring结合使用。1.2.9版本开始支持spring-boot。spring�
 	</dependency>
 ![maven](https://img.shields.io/maven-central/v/com.geccocrawler/gecco-spring.svg?style=flat-square)
 ## 初始化Gecco
-加载完成bean后启动Gecco，可以通过继承SpringGeccoEngine类，初始化你的GeccoEngine，需要特别注意的是GeccoEngine需要用非阻塞模式***start()***运行:
+加载完成bean后启动Gecco，可以通过继承SpringGeccoEngine类，初始化你的GeccoEngine，需要特别注意的是GeccoEngine需要用非阻塞模式start()运行:
 
 	@SpringBootApplication
     @Configuration
